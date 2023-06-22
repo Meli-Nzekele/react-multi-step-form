@@ -1,0 +1,119 @@
+h1 {
+  border-bottom: 2px solid #aac6c6;
+  padding-bottom: 10px;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.container {
+  color: #1c1a1a;
+  background-color: #fbf8f8;
+  padding: 25px;
+  /* box-shadow: 5px 5px 3px 2px #f6f6f6; */
+  border: 1px solid #1c1a1a;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  background-color: #aac6c6;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: #1c1a1a;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #1c1a1a;
+  border: none;
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.animate-right {
+  transform: translateY(20px);
+  opacity: 0.5;
+}
+
+.animate-left {
+  transform: translateY(20px);
+  opacity: 0.5;
+}
+
+.reset {
+  color: #876b6b;
+  font-weight: 800;
+}
+
+/* step 4 */
+
+.custom-radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.custom-radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  border: 2px solid #876b6b;
+}
+
+.custom-radio:hover .custom-radio-button {
+  background-color: #876b6b;
+  border: 2px solid #f6f6f6;
+}
+
+.custom-radio-input:checked {
+  background-color: #aac6c6;
+  border: 2px solid #aac6c6;
+}
+
+.custom-radio-button:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
